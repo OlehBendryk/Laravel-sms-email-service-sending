@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Interfaces;
+
+interface MessengerInterface
+{
+    /**
+     * @param $value
+     * @return MessengerInterface
+     */
+    public function setSender($value):MessengerInterface;
+
+    /**
+     * @param $value
+     * @return MessengerInterface
+     */
+    public function setRecipient($value):MessengerInterface;
+
+    /**
+     * @param $value
+     * @return MessengerInterface
+     */
+    public function setMessage($value):MessengerInterface;
+
+    /**
+     * @return bool
+     */
+    public function send():bool;
+
+}
